@@ -45,20 +45,21 @@
       </section>
       <section class="products">
         <h2 class="products-title">Category Products</h2>
-        <div class="slider_products-list">
-          <!-- если здесь слайдер, то в коде все картинки надо 
-          прописывать, включая те что будут вылазить при перелистывании? -->
-          <a class="products-link" href="#">APPAREL KIDS</a>
+        <div class="slider_products-list">          
+          <a class="products-link" href="#">
           <img class="products-img" src="/images/products1.jpg" alt="apparel kids">
-          <a class="products-link" href="#">HOLIDAY SHOP</a>
+          APPAREL KIDS</a>
+          <a class="products-link" href="#">
           <img class="products-img" src="/images/products2.jpg" alt="holiday shop">
-          <a class="products-link" href="#">TOYS</a>
+          HOLIDAY SHOP</a>
+          <a class="products-link" href="#">
           <img class="products-img" src="/images/products3.jpg" alt="toys">
-          <a class="products-link" href="#">ACCESSORIES</a>
+          TOYS</a>
+          <a class="products-link" href="#">
           <img class="products-img" src="/images/products4.jpg" alt="accessories">
-          <!-- здесь для button нужно type прописывать? -->
-          <button class="slider_nav-item"></button>
-          <button class="slider_nav-item"></button>
+          ACCESSORIES</a>
+          <button class="slider_nav-item" type="button"></button>
+          <button class="slider_nav-item" type="button"></button>
           <p class="products-text">Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.</p>
         </div>
@@ -71,8 +72,9 @@
         <a class="delivery-link" href="#">Credit</a>
         <p class="delivery-text text-1">Some days i feel like i've been working on dlk my entire life
           and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        <p class="delivery-text text-2">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy
-          place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+        <p class="delivery-text text-2">What started as an outlet to deal  with the traumatic loss of my husband,
+        dlk has now become a truly happy place for me and i have you and all
+        of the beautiful designers that we work with to thank!</p>
         <a class="delivery-button button button-black" href="#">LEARN MORE</a>  
       </section>
       <section class="partners">
@@ -135,10 +137,8 @@
       </section>
       <section class="connect">
         <h2 class="connect-title">Connect</h2>
-        <form action="#">
-          <!-- для доступности добавил label, но сомневаюсь в его необходимости здесь -->
-          <label class="hidden" for="form-email">Email</label>
-          <input placeholder="Email" id="form-email" type="email" name="email">       
+        <form action="#">          
+          <input placeholder="Email" id="email" type="email" name="email">       
           <button type="submit">join</button>          
         </form>
         <ul class="social_link">
@@ -158,6 +158,27 @@
       </div>
       <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
       <a class="web design-link" href="#">Web Design — Direct Line Development</a>
-    </footer>     
+    </footer>  
+    <form action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+    
+    <label for="form-name">Name</label>
+    <input id="form-name" type="text" name="name">
+
+    <label for="form-phone">Phone</label>
+    <input id="form-phone" type="text" name="phone">
+
+    <label for="form-email">Email</label>
+    <input id="form-email" type="email" name="email">
+
+    <label for="form-message">Message</label>
+    <input id="form-message" type="text" name="message">
+
+    <input type="checkbox" name="accept" id="form-consent">
+    <label for="form-consent">By clicking on the button, you consent to the processing of your personal data
+    </label>
+    
+    <button type="submit" class="button button-grey">Submit</button>
+    <button type="button">x</button>   
+    </form>
   </body>
 </html>
