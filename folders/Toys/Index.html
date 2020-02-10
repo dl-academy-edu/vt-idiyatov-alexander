@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Design Life Kids</title>
+  </head>
+  <body>
+    <header>
+      <a href="/Index.html">
+        <img class="header-log" src="/images/logo.svg" alt="logo">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a class="link" href="#">blog</a></li>
+          <li><a class="link" href="/folders/CategoryProducts/index.html">catalog</a></li>
+          <li><a class="link" href="#">about us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">
+            <img class="header-button header-search-button" src="/images/search.svg" alt="search">
+          </a></li>
+          <li><a class="link" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+      <h1 class="title">Toy for kids</h1>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs">
+          <li><a class="breadcrumbs-link" href="/Index.html">Home</a></li>
+          <li><a class="breadcrumbs-link" href="/folders/CategoryProducts/index.html">catalog</a></li>
+          <li>Toys</li>
+        </ul>
+      </div>
+      <form name="order" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+    
+        <fieldset>
+          <label for="form-cost">Cost</label>
+          <input id="form-cost" type="range" name="cost">
+          </fieldset>
+  
+        <fieldset>
+          <legend>Color</legend>
+          <label for="form-color-black">Black</label>
+          <input id="form-color-black" type="checkbox" name="black">
+          <label for="form-color-blue">Blue</label>
+          <input id="form-color-blue" type="checkbox" name="blue">
+          <label for="form-color-green">Green</label>
+          <input id="form-color-green" type="checkbox" name="green">
+          <label for="form-color-white">White</label>
+          <input id="form-color-white" type="checkbox" name="white">
+          </fieldset>  
+  
+        <fieldset>
+          <legend>Delivery</legend>
+          <label for="form-delivery-free">Free shipping</label>
+          <input id="form-delivery-free" type="radio" name="free shipping">
+          <label for="form-delivery-fast">Fast shipping</label>
+          <input id="form-delivery-fast" type="radio" name="fast shipping">
+          </fieldset>  
+  
+        <fieldset>
+          <legend>Amount</legend>
+          <label for="form-amount-5">0-5</label>
+          <input id="form-amount-5" type="radio" name="0-5">
+          <label for="form-amount-20">10-20</label>
+          <input id="form-amount-20" type="radio" name="10-20">
+          <label for="form-amount-50">20-50</label>
+          <input id="form-amount-50" type="radio" name="20-50">
+          </fieldset>  
+
+        <button type="submit" class="button button-black">Apply</button>
+      </form>
+      <section class="toys">
+        <h2 class="hidden">Toys</h2>
+        <ul>
+          <li class="toys">            
+            <a class="toys-link"  href="#"><img class="toys-photo" src="/images/Toy-1.jpg" alt="bean bag">
+            HARKY BEAN BAG CHAIR COVER<p class="toys-price">$60.00 USD</p></a>
+          </li>
+          <li class="toys">            
+            <a class="toys-link" href="#"><img class="toys-photo" src="/images/Toy-2.jpg" alt="deco frames">
+            BRASS DECO FRAMES<p class="toys-price">$66.00 USD</p></a>
+          </li>
+          <li class="toys">
+            
+            <a class="toys-link" href="#"><img class="toys-photo" src="/images/Toy-3.jpg" alt="apron">
+            CIBO FULL APRON<p class="toys-price">$60.00 USD</p></a>            
+          </li>
+          <li class="toys">            
+            <a class="toys-link" href="#"><img class="toys-photo" src="/images/Toy-4.jpg" alt="gumball machine">
+            GATCHA GATCHA GUMBALL MACHINE<p class="toys-price">$56.00 USD</p></a>            
+          </li>
+          <li class="toys">
+            
+            <a class="toys-link" href="#"><img class="toys-photo" src="/images/Toy-5.jpg" alt="candle">
+            CHRISTMAS ADVENT SCENTED CANDLE<p class="toys-price">$29.00 USD</p></a>            
+          </li>
+          <li class="toys">            
+            <a class="toys-link" href="#"><img class="toys-photo" src="/images/Toy-6.jpg" alt="tea light">
+            TANGLE SPINNING TEA LIGHT<p class="toys-price">$56.00 USD</p></a>            
+          </li>
+        </ul>
+      </section>
+      <div class="slider_toys">
+        <button class="slider_toys.active">1</button>
+        <button class="slider_toys" type="button">2</button>
+        <button class="slider_toys" type="button">3</button>
+        <button class="slider_toys" type="button">4</button>
+      </div>       
+    </main>
+    <footer class="footer">
+      <section class="navigation">
+        <h2 class="navigation-title">Navigation</h2>
+        <ul class="navigation-list">
+          <li><a class="navigation-link" href="#">About Us</a></li>
+          <li><a class="navigation-link" href="#">Blog</a></li>
+          <li><a class="navigation-link" href="#">Design Services</a></li>
+          <li><a class="navigation-link" href="#">Featured On</a></li>
+          <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="navigation-link" href="#">Shop By Designer</a></li>          
+        </ul>
+      </section>
+      <section class="customer information">
+        <h2 class="customer information-title">Customer Information</h2>
+        <ul class="customer information-list">
+          <li><a class="customer information-link" href="#">Contact Us</a></li>
+          <li><a class="customer information-link" href="#">Sale Exclusions</a></li>
+          <li><a class="customer information-link" href="#">Shipping & Returns</a></li>
+          <li><a class="customer information-link" href="#">Terms & Conditions</a></li>
+          <li><a class="customer information-link" href="#">Privacy Policy</a></li>
+          <li><a class="customer information-link" href="#">Search</a></li>
+        </ul>
+      </section>
+      <section class="connect">
+        <h2 class="connect-title">Connect</h2>
+        <form action="#">          
+          <input placeholder="Email" id="email" type="email" name="email">       
+          <button type="submit">join</button>          
+        </form>
+        <ul class="social_link">
+          <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
+        </ul>
+      </section>
+      <div class="rating">
+        <p class="rating">Company Rating</p>
+        <span class="rating">&#9734;</span>
+        <span class="rating">&#9734;</span>
+        <span class="rating">&#9734;</span>
+        <span class="rating">&#9734;</span>
+        <span class="rating">&#9734;</span>
+      </div>
+      <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="web design-link" href="#">Web Design — Direct Line Development</a>
+    </footer>  
+  </body>
+</html>
+    
