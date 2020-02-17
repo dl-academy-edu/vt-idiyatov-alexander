@@ -33,23 +33,27 @@
       </div>
       <form action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
     
-        <label for="form-name">Name</label>
-        <input id="form-name" placeholder="Ivan Ivanov" type="text" name="name">
+        <label>Name
+          <input placeholder="Ivan Ivanov" type="text" name="name">
+        </label>        
     
-        <label for="form-phone">Phone</label>
-        <input id="form-phone" type="text" name="phone">
+        <label>Phone
+          <input type="text" name="phone">
+        </label>        
     
-        <label for="form-email">Email</label>
-        <input id="form-email" type="email" name="email">
+        <label>Email
+          <input type="email" name="email">
+        </label>        
     
-        <label for="form-message">Message</label>
-        <input id="form-message" type="text" name="message">
-    
-        <input type="checkbox" name="accept" id="form-consent">
-        <label for="form-consent">By clicking on the button,
-          you consent to the processing of your personal data
+        <label>Message
+          <textarea type="text" name="message"></textarea>
         </label>
-        
+                
+        <label>
+          <input type="checkbox" name="accept">
+          By clicking on the button, you consent
+          to the processing of your personal data
+        </label>        
         <button type="submit" class="button button-black">Submit</button>
       </form>
       <section class="support">
