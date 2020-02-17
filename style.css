@@ -1,0 +1,263 @@
+
+
+/* poster */
+
+.poster {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  min-height: 372px;
+  background: #EEE4DB;
+  margin-top: 89px;
+}
+
+.slider_nav {
+  display: flex;
+  position: absolute;
+  padding-top: 17px;
+  padding-left: 28px;
+  flex-direction: column;
+}
+
+.slider_nav-inner {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  justify-content: space-between;
+}
+
+.slider_nav-item_active {
+  width: 31px;
+  height: 3px;
+  background: rgba(30, 6, 6, 0.6);
+}
+
+.slider_nav-item {
+  width: 31px;
+  height: 3px;
+  background: #D6CAC2;
+}
+
+.slider_nav-text{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.poster-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 89px;
+  margin-left: 133px;
+  width: 307px;
+
+}
+
+.poster-title-text {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110% 
+  color: #1E0606;
+  margin: 0;
+}
+
+.poster-text{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.poster-button {
+  width: 161px;
+}
+
+.background-img {
+  display: flex;
+  position: absolute;
+  max-width: 635.49px;
+  width: vw;
+  height: 461px;
+  bottom: 0;
+  right: 99px;
+  }
+
+.text-small{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  background: #C29974;
+  margin: 0 auto;
+  padding: 11px 20px;
+  width: 1220px;
+}
+
+/* products */
+
+.products {
+    padding-top: 90px;
+  
+}
+
+
+.products-title {
+  font-family: Montserrat;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+Color: #1E0606;
+margin-top: 0;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.products-link {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  width: 300px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.link-kids {
+  background: #DBE4DB;
+  background-image: url(/images/product-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+.link-shop {
+  background: rgba(186, 142, 107, 0.3);
+  background-image: url(/images/product-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-toys {
+  background: #F8F2DA;
+  background-image: url(/images/product-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-accessories {
+  background: rgba(9, 3, 79, 0.17);
+  background-image: url(/images/product-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider_nav {
+  display: flex;
+  }
+
+  .slider_nav-item {
+    
+  }
+
+.products-text {
+  font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}
+
+/* delivery */
+
+.delivery {
+  margin-top: 100px;
+}
+
+.delivery-title {
+  font-family: Montserrat;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+.delivery-link {
+  font-family: Crimson Text;
+font-style: italic;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;
+color: #1E0606;
+}
+
+.delivery-text {
+  font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}
+
+/* about us */
+
+.about-us-title {
+  font-family: Montserrat;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+.title-middle {
+  font-family: Crimson Text;
+font-style: italic;
+font-size: 26px;
+line-height: 32px;
+color: #1E0606;
+}
+
+.about-us-text {
+  font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}
+
+/* contacts */
+
+.contacts-title {
+  font-family: Montserrat;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+.contacts-text {
+  font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}
+

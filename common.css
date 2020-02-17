@@ -1,0 +1,163 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 20px;
+}
+
+.button {
+  font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+text-transform: uppercase;
+color: #FFFFFF;
+display: flex;
+padding: 9px 22px;
+background-color:  #000000;
+}
+
+.list-point-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.header-log {
+  width: 100px;
+  height: 52px;
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;  
+}
+
+.header-list-links {
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+}
+
+.header-list-contacts {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  }
+
+.contact-link {
+  margin-left: 23px;
+}
+
+.link {
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #1E0606;
+
+  margin-right: 20px;
+}
+
+.contact-link {
+  font-weight: bold;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+/* footer */
+
+.navigation-title {
+  font-size: 16px;
+line-height: 22px;
+color: #AAAAAA;
+}
+
+.navigation-link {
+  font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+.customer-information-title {
+    font-size: 16px;
+  line-height: 22px;
+  color: #AAAAAA
+}
+
+.customer-information-link {
+  font-size: 16px;
+line-height: 22px;
+
+color: #FFFFFF;
+}
+
+.connect-title{
+  font-size: 16px;
+line-height: 22px;
+color: #AAAAAA;
+}
+
+.rating{
+  font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+
+.copyright{
+  font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
+
+.web-design-link{
+  font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #A2A2A2;
+}
