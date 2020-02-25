@@ -15,7 +15,7 @@
       </a>
       <nav class="header-nav">
         <ul class="header-list-links list-point-none">
-          <li><a class="link" href="#">blog</a></li>
+          <li><a class="link" href="/folders/Blog/index.html">blog</a></li>
           <li><a class="link" href="/folders/CategoryProducts/index.html">catalog</a></li>
           <li><a class="link" href="#">about us</a></li>
         </ul>
@@ -34,9 +34,9 @@
           <span class="slider_nav-text">01</span>
           <div class="slider_nav-inner">
             <button class="slider_nav-item_active"></button>
-            <button class="slider_nav-item"></button>
-            <button class="slider_nav-item"></button>
-            <button class="slider_nav-item"></button>
+            <button class="slider_nav-item" type="button"></button>
+            <button class="slider_nav-item" type="button"></button>
+            <button class="slider_nav-item" type="button"></button>
           </div>
         </div>
       <div class="poster-title">       
@@ -65,30 +65,35 @@
           <!-- <img class="products-img" src="/images/product-4.png" alt="accessories"> -->
           ACCESSORIES</a>         
         </div>
-        <div class="slider_nav">
-          <button class="slider_nav-item" type="button"></button>
-          <button class="slider_nav-item" type="button"></button>
+        <div class="slider-nav">
+          <button class="slider_nav-button nav-button-left" type="button"></button>
+          <button class="slider_nav-button nav-button-right" type="button"></button>
           <p class="products-text">Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.</p>
-          </div>
+        </div>
       </section>
         
       <section class="delivery container">
-        <h2 class="delivery-title">Delivery</h2>
         <img class="delivery-img" src="/images/delivery.jpg" alt="woman in dress">
+      <div class="delivery-content">
+        <h2 class="delivery-title">Delivery</h2>
+      <div class="delivery-links">
+        <span class="delivery-link_active"></span>
         <a class="delivery-link" href="#">Delivery</a>
         <a class="delivery-link" href="#">Guarantee</a>
         <a class="delivery-link" href="#">Credit</a>
+      </div>
         <p class="delivery-text text-1">Some days i feel like i've been working on dlk my entire life
           and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
         <p class="delivery-text text-2">What started as an outlet to deal  with the traumatic loss of my husband,
-        dlk has now become a truly happy place for me and i have you and all
-        of the beautiful designers that we work with to thank!</p>
-        <a class="delivery-button button button-black" href="#">LEARN MORE</a>  
+          dlk has now become a truly happy place for me and i have you and all
+          of the beautiful designers that we work with to thank!</p>
+        <a class="delivery-button button button-black" href="#">LEARN MORE </a>  
+      </div>
       </section>
-      <section class="partners">
+      <section class="partners container">
         <h2 class="hidden">partners</h2>
-        <ul class="list-point-none">
+        <ul class="partners-links list-point-none">
           <li>
             <a href="#"><img src="/images/partner-1.png" alt="mail.ru" aria-label="mail.ru"></a>
           </li>
@@ -103,7 +108,8 @@
           </li>
         </ul class="list-point-none">
       </section>
-      <article class="about us">
+      <div class="about-us-contacts container">
+        <article class="about-us">
         <h2 class="about-us-title title-large">Design Life Kids</h2>
         <h3 class="about-us-title title-middle">about us</h3>
         <p class="about-us-text">
@@ -111,17 +117,19 @@
           there are other days that i am completely shocked that four
             years have flown by. It's simply magical.
         </p>
-        <a href="#" class="about-us-button button button-black"></a>
+        <a href="#" class="about-us-button button button-black">buy now</a>
       </article> 
       <section class="contacts">
         <h2 class="contacts-title">Contacts</h2>
         <p class="contacts-text">Some days i feel like i've been working on dlk my entire life and
           there are other days that i am completely shocked that four
           years have flown by. It's simply magical.</p>
-        <img src="/images/map.jpg" alt="map">   
-      </section>  
+        <img src="/images/map.jpg" alt="map">  
+      </section>
+      </div>  
     </main> 
     <footer class="footer">
+      <div class="footer-links container">
       <section class="navigation">
         <h2 class="navigation-title">Navigation</h2>
         <ul class="navigation-list  list-point-none">
@@ -146,29 +154,35 @@
       </section>
       <section class="connect">
         <h2 class="connect-title">Connect</h2>
-        <form action="#">          
-          <input placeholder="Email" id="email" type="email" name="email">       
-          <button class="button" type="submit">join</button>          
+        <form class="form-email" action="#">
+          <label class="email">          
+          <input placeholder="Email" type="email" name="email" class="email-input">       
+          </label>
+          <button class="email-button button" type="submit">join</button>          
         </form>
-        <ul class="social_link list-point-none">
+        <ul class="social-link list-point-none">
           <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
           <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
           <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
           <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
         </ul>
       </section>
-      <div class="rating">
-        <p class="rating">Company Rating</p>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
       </div>
+      <div class="footer-information container">
+        <div class="company-rating">
+          <p class="rating-text">Company Rating</p>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star rating-star_deactive"></span>
+        </div>
       <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
       <a class="web-design-link" href="#">Web Design — Direct Line Development</a>
+      </div>
     </footer>  
-    <form action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+    <div class="form">
+      <form action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
     
     <label for="form-name">Name</label>
     <input id="form-name" type="text" name="name">
@@ -189,5 +203,6 @@
     <button type="submit" class="button button-grey">Submit</button>
     <button type="button">x</button>   
     </form>
+    </div>
   </body>
 </html>

@@ -42,6 +42,14 @@ padding: 9px 22px;
 background-color:  #000000;
 }
 
+.button:hover {
+  background-color: #C29974;
+}
+
+.button:active {
+  background-color: #CFAF91;
+}
+
 .list-point-none {
   list-style-type: none;
   padding-left: 0;
@@ -62,12 +70,21 @@ background-color:  #000000;
 .header-log {
   width: 100px;
   height: 52px;
+  opacity: 1;
+}
+
+.header-log:hover {
+  opacity: 0.5;
+}
+
+.header-log:active {
+  opacity: 0.1;
 }
 
 .header-nav {
   display: flex;
   width: 100%;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .header-list-links {
@@ -84,6 +101,15 @@ background-color:  #000000;
 
 .contact-link {
   margin-left: 23px;
+  opacity: 1;
+}
+
+.contact-link:hover {
+  opacity: 0.5;
+}
+
+.contact-link:active {
+  opacity: 0.1;
 }
 
 .link {
@@ -91,8 +117,28 @@ background-color:  #000000;
   line-height: 19px;
   text-transform: uppercase;
   color: #1E0606;
-
   margin-right: 20px;
+  opacity: 1;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+.link:active {
+  opacity: 0.1;
+}
+
+.header-button {
+  opacity: 1;
+}
+
+.header-button:hover {
+  opacity: 0.5;
+}
+
+.header-button:active {
+  opacity: 0.1;
 }
 
 .contact-link {
@@ -107,10 +153,29 @@ color: #1E0606;
 
 /* footer */
 
+.footer {
+  background-color: #434343;
+  margin-top: 60px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.navigation {
+  width: 380px;
+}
+
 .navigation-title {
   font-size: 16px;
 line-height: 22px;
 color: #AAAAAA;
+padding: 23px 0px;
+margin-top: 77px;
+border-bottom: 1px solid  #666666;
 }
 
 .navigation-link {
@@ -119,31 +184,156 @@ line-height: 22px;
 color: #FFFFFF;
 }
 
+.navigation-link:hover {
+  opacity: .5;
+}
+
+.navigation-link:active {
+  opacity: .2;
+  cursor: none;
+}
+
+.customer-information {
+  width: 380px;
+  
+}
+
 .customer-information-title {
-    font-size: 16px;
+  padding: 23px 0px;
+  margin-top: 77px;
+  border-bottom: 1px solid  #666666;
+  width: 380px;
+  font-size: 16px;
   line-height: 22px;
-  color: #AAAAAA
+  color: #AAAAAA  
 }
 
 .customer-information-link {
   font-size: 16px;
 line-height: 22px;
-
 color: #FFFFFF;
+}
+
+.customer-information-link:hover {
+  opacity: .5;
+}
+
+.customer-information-link:active {
+  opacity: .2;
+  cursor: none;
+}
+
+.connect {
+  width: 380px;
 }
 
 .connect-title{
   font-size: 16px;
 line-height: 22px;
 color: #AAAAAA;
+padding: 23px 0px;
+margin-top: 77px;
+border-bottom: 1px solid  #666666;
 }
 
-.rating{
+.form-email {
+  display: flex;
+  flex-wrap: wrap;
+padding-top: 12px;
+}
+
+.email-input {
+  background: #666666;
+  width: 299px;
+  height: 40px;
+  border: 0px;
+  padding: 0;
+}
+
+.email-input:hover {
+  background: #666666;
+  border: 1px solid #FFFDFD;
+  cursor: pointer;
+}
+
+.email-input:active {
+  background: #FFFFFF;
+  border: 1px solid #666666;
+  cursor: none;
+}
+
+.email-button {
+  border: 0px;
+}
+
+.social-link {
+display: flex;
+padding: 9px 0px;
+}
+
+.social-img {
+  margin-right: 10px;
+}
+
+.social-img:hover {
+  background: #666666;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: .6;
+}
+
+.social-img:active {
+  background: #666666;
+  border-radius: 15px;
+  cursor: none;
+  opacity: .3;
+
+}
+
+.footer-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid  #666666;
+  margin-top: 12px;
+  padding-bottom: 100px;
+  
+}
+
+.company-rating{
   font-size: 16px;
 line-height: 22px;
 display: flex;
 align-items: center;
 color: #FFFFFF;
+padding-top: 7px;
+width: 380px;
+}
+
+.company-rating:hover {
+  color: #C29974;
+  cursor: pointer;
+}
+
+.company-rating:active {
+  color: #C29974;
+  cursor: none;
+}
+
+.rating-text {
+  padding-right: 25px;
+}
+
+.rating-star {
+  padding-right: 3px;
+}
+
+.rating-star:before {
+	content: '★';
+}
+
+.rating-star_deactive {
+  color: #FFFFFF;
 }
 
 .copyright{
@@ -152,6 +342,8 @@ line-height: 22px;
 display: flex;
 align-items: center;
 color: #FFFFFF;
+padding-top: 7px;
+width: 380px;
 }
 
 .web-design-link{
@@ -160,4 +352,19 @@ line-height: 22px;
 display: flex;
 align-items: center;
 color: #A2A2A2;
+padding-top: 7px;
+width: 380px;
 }
+
+.web-design-link:hover {
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.web-design-link:active {
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  cursor: none;
+}
+
+
