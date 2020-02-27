@@ -119,6 +119,7 @@ background-color:  #000000;
   color: #1E0606;
   margin-right: 20px;
   opacity: 1;
+  
 }
 
 .link:hover {
@@ -176,12 +177,16 @@ color: #AAAAAA;
 padding: 23px 0px;
 margin-top: 77px;
 border-bottom: 1px solid  #666666;
+margin-bottom: 28px;
 }
 
 .navigation-link {
+  display: flex;
   font-size: 16px;
 line-height: 22px;
 color: #FFFFFF;
+padding-bottom: 15px;
+width: 158px;
 }
 
 .navigation-link:hover {
@@ -202,6 +207,7 @@ color: #FFFFFF;
   padding: 23px 0px;
   margin-top: 77px;
   border-bottom: 1px solid  #666666;
+  margin-bottom: 28px;
   width: 380px;
   font-size: 16px;
   line-height: 22px;
@@ -209,9 +215,12 @@ color: #FFFFFF;
 }
 
 .customer-information-link {
+  display: flex;
   font-size: 16px;
 line-height: 22px;
 color: #FFFFFF;
+padding-bottom: 15px;
+width: 148px;
 }
 
 .customer-information-link:hover {
@@ -242,24 +251,31 @@ border-bottom: 1px solid  #666666;
 padding-top: 12px;
 }
 
+.email-input::-webkit-input-placeholder {
+  color: #EBEBEB;
+  padding-left: 15px;
+}
+
 .email-input {
   background: #666666;
   width: 299px;
   height: 40px;
-  border: 0px;
-  padding: 0;
+  border: 1px solid transparent;
+  /* padding: 0; */
 }
 
 .email-input:hover {
   background: #666666;
-  border: 1px solid #FFFDFD;
+  border-color: #FFFDFD;
   cursor: pointer;
 }
 
-.email-input:active {
+.email-input:active::-webkit-input-placeholder {
   background: #FFFFFF;
   border: 1px solid #666666;
   cursor: none;
+  color: #1E0606;
+  padding: 14px;
 }
 
 .email-button {
