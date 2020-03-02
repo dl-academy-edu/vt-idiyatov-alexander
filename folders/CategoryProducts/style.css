@@ -1,0 +1,177 @@
+
+
+.title {
+  font-family: Montserrat;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+text-transform: uppercase;
+color: #1E0606;
+margin-top: 20px;
+margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  min-width: 146px;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+
+.breadcrumbs-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 65px;
+  transform: rotate(45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 65px;
+  transform: rotate(-45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-link {
+  font-family: Crimson Text;
+font-style: italic;
+font-size: 20px;
+line-height: 25px;
+color: #1E0606;
+}
+
+.breadcrumbs-active {
+  
+font-family: Crimson Text;
+font-style: italic;
+font-size: 20px;
+line-height: 25px;
+color: #1E0606;
+opacity: .5;
+}
+
+  .breadcrumbs-link:hover {
+    opacity: .75;
+  }
+  
+.breadcrumbs-link:active {
+    color: #1E0606;
+    opacity: 1;
+  }
+
+.products-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.products-link:nth-child(4) {
+  margin-left: 200px;
+}
+
+.products-link {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  width: 280px;
+  margin-bottom: 23px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.products-link:hover {
+  text-decoration-line: underline;
+}
+
+.products-link:active {
+  text-decoration-line: underline;
+  cursor: none;
+}
+
+.link-kids {
+  background: #DBE4DB;
+  background-image: url(/images/product-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  }
+
+.link-shop {
+  background: rgba(186, 142, 107, 0.3);
+  background-image: url(/images/product-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link-toys {
+  background: #F8F2DA;
+  background-image: url(/images/product-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.link-accessories {
+  background: rgba(9, 3, 79, 0.17);
+  background-image: url(/images/product-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* margin-left: 200px; */
+}
+
+.link-sale {
+  background: #F8F2DA;
+  background-image: url(/images/product-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.link-apparel-adults {
+  background: #F8F2DA;
+  background-image: url(/images/product-6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.description {
+  max-width: 680px;
+  margin-left: 220px;
+}
+
+.description-title {
+  margin: 25px 0;
+  padding-top: 2px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606  
+}
+
+.description-text {
+  margin: 15px 0;
+  font-family: Open Sans;
+font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}

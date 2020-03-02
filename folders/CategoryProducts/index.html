@@ -3,58 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <title>Design Life Kids</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/folders/CategoryProducts/style.css">
   </head>
   <body>
-    <header>
-      <a href="/Index.html">
-        <img class="header-log" src="/images/logo.svg" alt="logo">
+    <header class="header container">
+      <a href="#">
+        <img class="header-log" src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
-        <ul>
-          <li><a class="link" href="#">blog</a></li>
-          <li>catalog</li>
-          <li><a class="link" href="#">about us</a></li>
+        <ul class="header-list-links list-point-none">
+          <li><a class="link" href="/folders/Blog/index.html">blog</a></li>
+          <li><a class="link" href="#">catalog</a></li>
+          <li><a class="link" href="/folders/Toys/index.html">toys</a></li>
         </ul>
-        <ul>
+        <ul class="header-list-contacts list-point-none">
           <li><a href="#">
             <img class="header-button header-search-button" src="/images/search.svg" alt="search">
           </a></li>
-          <li><a class="link" href="#">contact us</a></li>
-        </ul>
+          <li><a class="contact-link" href="#">contact us</a></li>
+        </ul>      
       </nav>
-    </header> 
+    </header>
     <main>
-      <h1 class="title">Category Products</h1>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs">
-          <li><a class="breadcrumbs-link" href="http://127.0.0.1:5500/Index.html">Home</a></li>
-          <li class="breadcrumbs-text">Catalog</li>
+      <h1 class="title container">Category Products</h1>
+      <div class="breadcrumbs container">
+        <ul class="breadcrumbs list-point-none">
+          <li><a class="breadcrumbs-link" href="/index.html">Home</a></li>
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-active">Catalog</li>
         </ul>
       </div>
-      <section class="products">
+      <section class="products container">
         <h2 class="hidden">products</h2>
-        <ul>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products1.jpg" alt="apparel kids">
-            APPAREL KIDS</a></li>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products2.jpg" alt="holiday shop">
-            HOLIDAY SHOP</a></li>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products3.jpg" alt="toys">
-            TOYS</a></li>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products4.jpg" alt="accessories">
-            ACCESSORIES</a></li>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products5.jpg" alt="sale">
-            SALE</a></li>
-          <li><a class="products-link" href="#">
-            <img class="products-img" src="/images/products6.jpg" alt="apparel adults">
-            APPAREL ADULTS</a></li>
-        </ul>
+          <div class="products-links">          
+            <a class="products-link link-kids" href="#">
+              APPAREL KIDS</a>
+            <a class="products-link link-shop" href="#">
+              HOLIDAY SHOP</a>
+            <a class="products-link link-toys" href="/folders/Toys/index.html">
+              TOYS</a>
+            <a class="products-link link-accessories" href="#">
+              ACCESSORIES</a>   
+            <a class="products-link link-sale" href="#">
+              SALE</a>
+            <a class="products-link link-apparel-adults" href="#">
+              APPAREL ADULTS</a>      
+          </div>
       </section>
-      <section class="description">
+      <section class="description container">
         <h2 class="description-title">Product Description</h2>
         <p class="description-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and
           almost really cry. You can even bathe her, just like a little sister.</p>
@@ -66,40 +65,57 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="footer-links container">
       <section class="navigation">
         <h2 class="navigation-title">Navigation</h2>
-        <ul class="customer information-list">
-          <li><a class="customer information-link" href="#">Contact us</a></li>
-          <li><a class="customer information-link" href="#">Sale Exclusions</a></li>
-          <li><a class="customer information-link" href="#">Shipping & Returns</a></li>
-          <li><a class="customer information-link" href="#">Terms & Conditions</a></li>
-          <li><a class="customer information-link" href="#">Privacy Policy</a></li>
-          <li><a class="customer information-link" href="#">Search</a></li>
+        <ul class="navigation-list  list-point-none">
+          <li><a class="navigation-link" href="/folders/Toys/index.html">Toys</a></li>
+          <li><a class="navigation-link" href="/folders/Blog/index.html">Blog</a></li>
+          <li><a class="navigation-link" href="#">Design Services</a></li>
+          <li><a class="navigation-link" href="#">Featured On</a></li>
+          <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="navigation-link" href="#">Shop By Designer</a></li>          
+        </ul>
+      </section>
+      <section class="customer-information">
+        <h2 class="customer-information-title">Customer Information</h2>
+        <ul class="customer-information-list list-point-none">
+          <li><a class="customer-information-link" href="/folders/ContactUs/index.html">Contact Us</a></li>
+          <li><a class="customer-information-link" href="#">Sale Exclusions</a></li>
+          <li><a class="customer-information-link" href="#">Shipping & Returns</a></li>
+          <li><a class="customer-information-link" href="#">Terms & Conditions</a></li>
+          <li><a class="customer-information-link" href="#">Privacy Policy</a></li>
+          <li><a class="customer-information-link" href="#">Search</a></li>
         </ul>
       </section>
       <section class="connect">
         <h2 class="connect-title">Connect</h2>
-        <form action="#">          
-          <input placeholder="Email" id="form-email" type="email" name="email">       
-          <button type="submit">join</button>          
+        <form class="form-email" action="#">
+          <label class="email">          
+          <input placeholder="Email" type="email" name="email" class="email-input">       
+          </label>
+          <button class="email-button button" type="submit">join</button>          
         </form>
-        <ul class="social-link">
+        <ul class="social-link list-point-none">
           <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
           <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
           <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
           <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
         </ul>
       </section>
-      <div class="rating">
-        <p class="rating">Company Rating</p>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
-        <span class="rating">&#9734;</span>
       </div>
+      <div class="footer-information container">
+        <div class="company-rating">
+          <p class="rating-text">Company Rating</p>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star rating-star_deactive"></span>
+        </div>
       <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-      <a class="web design-link" href="#">Web Design — Direct Line Development</a>
-    </footer>
+      <a class="web-design-link" href="#">Web Design — Direct Line Development</a>
+      </div>
+    </footer> 
   </body>
 </html>
