@@ -33,13 +33,15 @@ img {
 
 .button {
   font-weight: bold;
-font-size: 16px;
-line-height: 22px;
-text-transform: uppercase;
-color: #FFFFFF;
-display: flex;
-padding: 9px 22px;
-background-color:  #000000;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  padding: 9px 22px;
+  background-color:  #000000;
+  border: 0;
+  outline: none;
 }
 
 .button:hover {
@@ -97,7 +99,7 @@ background-color:  #000000;
   display: flex;
   justify-content: space-between;  
   align-items: center;
-  }
+}
 
 .contact-link {
   margin-left: 23px;
@@ -119,7 +121,7 @@ background-color:  #000000;
   color: #1E0606;
   margin-right: 20px;
   opacity: 1;
-  
+
 }
 
 .link:hover {
@@ -144,12 +146,12 @@ background-color:  #000000;
 
 .contact-link {
   font-weight: bold;
-font-size: 14px;
-line-height: 19px;
-display: flex;
-align-items: center;
-text-transform: uppercase;
-color: #1E0606;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1E0606;
 }
 
 /* footer */
@@ -172,21 +174,21 @@ color: #1E0606;
 
 .navigation-title {
   font-size: 16px;
-line-height: 22px;
-color: #AAAAAA;
-padding: 23px 0px;
-margin-top: 77px;
-border-bottom: 1px solid  #666666;
-margin-bottom: 28px;
+  line-height: 22px;
+  color: #AAAAAA;
+  padding: 23px 0px;
+  margin-top: 77px;
+  border-bottom: 1px solid  #666666;
+  margin-bottom: 28px;
 }
 
 .navigation-link {
   display: flex;
   font-size: 16px;
-line-height: 22px;
-color: #FFFFFF;
-padding-bottom: 15px;
-width: 158px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+  width: 158px;
 }
 
 .navigation-link:hover {
@@ -217,10 +219,10 @@ width: 158px;
 .customer-information-link {
   display: flex;
   font-size: 16px;
-line-height: 22px;
-color: #FFFFFF;
-padding-bottom: 15px;
-width: 148px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+  width: 148px;
 }
 
 .customer-information-link:hover {
@@ -238,17 +240,17 @@ width: 148px;
 
 .connect-title{
   font-size: 16px;
-line-height: 22px;
-color: #AAAAAA;
-padding: 23px 0px;
-margin-top: 77px;
-border-bottom: 1px solid  #666666;
+  line-height: 22px;
+  color: #AAAAAA;
+  padding: 23px 0px;
+  margin-top: 77px;
+  border-bottom: 1px solid  #666666;
 }
 
 .form-email {
   display: flex;
   flex-wrap: wrap;
-padding-top: 12px;
+  padding-top: 12px;
 }
 
 .email-input::-webkit-input-placeholder {
@@ -261,7 +263,7 @@ padding-top: 12px;
   width: 299px;
   height: 40px;
   border: 1px solid transparent;
-  /* padding: 0; */
+  outline: none;
 }
 
 .email-input:hover {
@@ -283,8 +285,8 @@ padding-top: 12px;
 }
 
 .social-link {
-display: flex;
-padding: 9px 0px;
+  display: flex;
+  padding: 9px 0px;
 }
 
 .social-img {
@@ -318,12 +320,12 @@ padding: 9px 0px;
 
 .company-rating{
   font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-padding-top: 7px;
-width: 380px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top: 7px;
+  width: 380px;
 }
 
 .company-rating:hover {
@@ -354,22 +356,22 @@ width: 380px;
 
 .copyright{
   font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-padding-top: 7px;
-width: 380px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top: 7px;
+  width: 380px;
 }
 
 .web-design-link{
   font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #A2A2A2;
-padding-top: 7px;
-width: 380px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #A2A2A2;
+  padding-top: 7px;
+  width: 380px;
 }
 
 .web-design-link:hover {
@@ -382,5 +384,6 @@ width: 380px;
   color: #FFFFFF;
   cursor: none;
 }
+
 
 

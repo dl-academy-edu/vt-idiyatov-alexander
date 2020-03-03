@@ -3,41 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <title>Design Life Kids</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/folders/Blog/style.css">
   </head>
   <body>
-    <header>
-      <a href="/Index.html">
-        <img class="header-log" src="/images/logo.svg" alt="logo">
+    <header class="header container">
+      <a href="/index.html">
+        <img class="header-log" src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
-        <ul>
-          <li>blog</li>
+        <ul class="header-list-links list-point-none">
+          <li><a class="link" href="#">blog</a></li>
           <li><a class="link" href="/folders/CategoryProducts/index.html">catalog</a></li>
-          <li><a class="link" href="#">about us</a></li>
+          <li><a class="link" href="/folders/Toys/index.html">toys</a></li>
         </ul>
-        <ul>
+        <ul class="header-list-contacts list-point-none">
           <li><a href="#">
             <img class="header-button header-search-button" src="/images/search.svg" alt="search">
           </a></li>
-          <li><a class="link" href="/folders/Contact  Us/Index.html">contact us</a></li>
-        </ul>
+          <li><a class="contact-link" href="/folders/ContactUs/index.html">contact us</a></li>
+        </ul>      
       </nav>
     </header> 
     <main>
-      <h1 class="title">Blog</h1>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs">
+      <h1 class="title container">Blog</h1>
+      <div class="breadcrumbs container">
+        <ul class="breadcrumbs list-point-none">
           <li><a class="breadcrumbs-link" href="/Index.html">Home</a></li>
-          <li>Blog</li>
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-active">Blog</li>
         </ul>
       </div>
-      <article class="blogs">
+      <article class="blogs container">
         <h2 class="hidden">Articles</h2>
-        <ul>
+        <ul class="list-point-none">
+          <div class="blogs-list">
           <li class="blog">
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog1.jpg" alt="Top 5 companies">
             <span class="blog-date">23rd August 2018</span>
+            <br>
             Top 5 fastest growing it service companies in philly
           </a>
           <p class="blog-text">Direct Line Development’s Team is excited to
@@ -50,6 +57,7 @@
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog2.jpg" alt="Best financial">
             <span class="blog-date">23rd August 2018</span>
+            <br>
             Best financial
           </a>
             <p class="blog-text">Direct Line Development is honored to be recognized
@@ -61,7 +69,8 @@
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog3.jpg" alt="Brand identity">
             <span class="blog-date">23rd August 2018</span>
-          Company logo or brand identity: which one is more important? brand identity
+            <br>
+            Company logo or brand identity: which one is more important? brand identity
           </a>
             <p class="blog-text">To survive in the world of digital marketing, you
               need to keep up with the latest SEO trends. Here are
@@ -72,7 +81,8 @@
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog4.jpg" alt="Best financial">
             <span class="blog-date">23rd August 2018</span>
-          Best financial
+            <br>
+            Best financial
           </a>
             <p class="blog-text">Direct Line Development is honored to be recognized
               as one of the Top 100 Fastest Growing Companies 2019
@@ -83,7 +93,8 @@
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog5.jpg" alt="Brand identity">
             <span class="blog-date">23rd August 2018</span>
-          Company logo or brand identity: which one is more important? brand identity
+            <br>
+            Company logo or brand identity: which one is more important? brand identity
           </a>
             <p class="blog-text">To survive in the world of digital marketing, you
             need to keep up with the latest SEO trends. Here are
@@ -94,7 +105,8 @@
           <a class="blog-link" href="#">
             <img class="blog-img" src="/images/blog6.jpg" alt="Top 5 companies">
             <span class="blog-date">23rd August 2018</span>
-          Top 5 fastest growing it service companies in philly
+            <br>
+            Top 5 fastest growing it service companies in philly
           </a>
           <p class="blog-text">Direct Line Development’s Team is excited to
             announce that we received UpCity’s 2019 Local
@@ -102,64 +114,74 @@
             resented to the Top 1% of service providers in the
             given marketplace.</p>
           </li>
+          </div>
         </ul>
       </article>
-      <ul class="pagination-list">
-        <li><a class="pagination-button" href="#"><</a></li> 
-        <li><a class="pagination-link-active" href="#">1</a></li>
-        <li><a class="pagination-link" href="#">2</a></li>
-        <li><a class="pagination-link" href="#">3</a></li>
-        <li><a class="pagination-link" href="#">4</a></li>
-        <li><a class="pagination-button" href="#">></a></li> 
-
-      </ul>
+      <div class="container">
+        <ul class="pagination-list list-point-none">
+        <li><a class="pagination-button button-left" href="#"></a></li> 
+        <div class="pagination-links">
+          <li><a class="pagination-link-active" href="#">1</a></li>
+          <li><a class="pagination-link" href="#">2</a></li>
+          <li><a class="pagination-link" href="#">3</a></li>
+          <li><a class="pagination-link" href="#">4</a></li>
+        </div>
+          <li><a class="pagination-button button-right" href="#"></a></li> 
+        </ul>
+      </div>
     </main>
     <footer class="footer">
-        <section class="navigation">
-          <h2 class="navigation-title">Navigation</h2>
-          <ul class="navigation-list">
-            <li><a class="navigation-link" href="#">About Us</a></li>
-            <li>Blog</li>
-            <li><a class="navigation-link" href="#">Design Services</a></li>
-            <li><a class="navigation-link" href="#">Featured On</a></li>
-            <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
-            <li><a class="navigation-link" href="#">Shop By Designer</a></li>          
-          </ul>
-        </section>
-        <section class="customer-information">
-          <h2 class="customer-information-title">Customer Information</h2>
-          <ul class="customer-information-list">
-            <li><a class="customer-information-link" href="#">Contact Us</a></li>
-            <li><a class="customer-information-link" href="#">Sale Exclusions</a></li>
-            <li><a class="customer-information-link" href="#">Shipping & Returns</a></li>
-            <li><a class="customer-information-link" href="#">Terms & Conditions</a></li>
-            <li><a class="customer-information-link" href="#">Privacy Policy</a></li>
-            <li><a class="customer-information-link" href="#">Search</a></li>
-          </ul>
-        </section>
-        <section class="connect">
-          <h2 class="connect-title">Connect</h2>
-          <form action="#">          
-            <input placeholder="Email" id="email" type="email" name="email">       
-            <button type="submit">join</button>          
-          </form>
-          <ul class="social_link">
-            <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
-            <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
-            <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
-            <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
-          </ul>
-        </section>
-        <div class="rating">
-          <p class="rating">Company Rating</p>
-          <span class="rating">&#9734;</span>
-          <span class="rating">&#9734;</span>
-          <span class="rating">&#9734;</span>
-          <span class="rating">&#9734;</span>
-          <span class="rating">&#9734;</span>
+      <div class="footer-links container">
+      <section class="navigation">
+        <h2 class="navigation-title">Navigation</h2>
+        <ul class="navigation-list  list-point-none">
+          <li><a class="navigation-link" href="/folders/Toys/index.html">Toys</a></li>
+          <li><a class="navigation-link" href="#">Blog</a></li>
+          <li><a class="navigation-link" href="#">Design Services</a></li>
+          <li><a class="navigation-link" href="#">Featured On</a></li>
+          <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="navigation-link" href="#">Shop By Designer</a></li>          
+        </ul>
+      </section>
+      <section class="customer-information">
+        <h2 class="customer-information-title">Customer Information</h2>
+        <ul class="customer-information-list list-point-none">
+          <li><a class="customer-information-link" href="/folders/ContactUs/index.html">Contact Us</a></li>
+          <li><a class="customer-information-link" href="#">Sale Exclusions</a></li>
+          <li><a class="customer-information-link" href="#">Shipping & Returns</a></li>
+          <li><a class="customer-information-link" href="#">Terms & Conditions</a></li>
+          <li><a class="customer-information-link" href="#">Privacy Policy</a></li>
+          <li><a class="customer-information-link" href="#">Search</a></li>
+        </ul>
+      </section>
+      <section class="connect">
+        <h2 class="connect-title">Connect</h2>
+        <form class="form-email" action="#">
+          <label class="email">          
+          <input placeholder="Email" type="email" name="email" class="email-input">       
+          </label>
+          <button class="email-button button" type="submit">join</button>          
+        </form>
+        <ul class="social-link list-point-none">
+          <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
+        </ul>
+      </section>
+      </div>
+      <div class="footer-information container">
+        <div class="company-rating">
+          <p class="rating-text">Company Rating</p>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star rating-star_deactive"></span>
         </div>
-        <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-        <a class="web design-link" href="#">Web Design — Direct Line Development</a>
+      <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="web-design-link" href="#">Web Design — Direct Line Development</a>
+      </div>
     </footer>
   </body>
 </html>

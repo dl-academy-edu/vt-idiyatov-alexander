@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Design Life Kids</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/folders/ContactUs/style.css">
+  </head>
+  <body>
+    <header class="header container">
+      <a href="/index.html">
+        <img class="header-log" src="/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="header-nav">
+        <ul class="header-list-links list-point-none">
+          <li><a class="link" href="/folders/Blog/index.html">blog</a></li>
+          <li><a class="link" href="/folders/CategoryProducts/index.html">catalog</a></li>
+          <li><a class="link" href="/folders/Toys/index.html">toys</a></li>
+        </ul>
+        <ul class="header-list-contacts list-point-none">
+          <li><a href="#">
+            <img class="header-button header-search-button" src="/images/search.svg" alt="search">
+          </a></li>
+          <li><a class="contact-link" href="#">contact us</a></li>
+        </ul>      
+      </nav>
+    </header>  
+    <main>
+      <h1 class="title container">Contact Us</h1>
+      <div class="breadcrumbs container">
+        <ul class="breadcrumbs list-point-none">
+          <li><a class="breadcrumbs-link" href="/index.html">Home</a></li>
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-active">Contact Us</li>
+        </ul>
+      </div>
+      <div class="form-support container">
+      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <label class="form-label">
+          <input class="form-input form-input-name" placeholder="Ivan Ivanov" type="text" name="name">
+          <span class="form-label-text">Name</span>
+        </label>        
+    
+      <div class="form-contact">
+        <label class="form-label">
+          <input class="form-input form-input-contact" type="text" name="phone">
+          <span class="form-label-text">Phone</span>
+        </label>        
+    
+        <label class="form-label">
+          <input class="form-input form-input-contact" type="email" name="email">
+          <span class="form-label-text">Email</span>
+        </label>        
+      </div>
+        <label class="form-label">
+          <textarea class="form-input form-input-message" type="text" name="message"></textarea>
+          <span class="form-label-text">Message</span>
+        </label>
+        
+        <label class="form-checkbox">
+          <input class="form-input-checkbox" type="checkbox" name="accept" value="data">
+          <span class="form-checkbox-indicator"></span>
+          By clicking on the button, you consent
+          to the processing of your personal data
+        </label>        
+        <button type="submit" class="button button-black">Submit</button>
+      </form>
+      <section class="support">
+        <h2 class="hidden">Support</h2>
+        <p class="support-text">Our support team are on-hand to assist with any
+          issues you are experiencing.</p>
+        <p class="support-text">Please use the form to contact us with your needs.
+          Send us a message and we'll respond as soon as possible.</p>
+        <p class="support-text text_large">An expert is waiting to help you!</p>
+      </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-links container">
+      <section class="navigation">
+        <h2 class="navigation-title">Navigation</h2>
+        <ul class="navigation-list  list-point-none">
+          <li><a class="navigation-link" href="/folders/Toys/index.html">Toys</a></li>
+          <li><a class="navigation-link" href="/folders/Blog/index.html">Blog</a></li>
+          <li><a class="navigation-link" href="#">Design Services</a></li>
+          <li><a class="navigation-link" href="#">Featured On</a></li>
+          <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
+          <li><a class="navigation-link" href="#">Shop By Designer</a></li>          
+        </ul>
+      </section>
+      <section class="customer-information">
+        <h2 class="customer-information-title">Customer Information</h2>
+        <ul class="customer-information-list list-point-none">
+          <li><a class="customer-information-link" href="#">Contact Us</a></li>
+          <li><a class="customer-information-link" href="#">Sale Exclusions</a></li>
+          <li><a class="customer-information-link" href="#">Shipping & Returns</a></li>
+          <li><a class="customer-information-link" href="#">Terms & Conditions</a></li>
+          <li><a class="customer-information-link" href="#">Privacy Policy</a></li>
+          <li><a class="customer-information-link" href="#">Search</a></li>
+        </ul>
+      </section>
+      <section class="connect">
+        <h2 class="connect-title">Connect</h2>
+        <form class="form-email" action="#">
+          <label class="email">          
+          <input placeholder="Email" type="email" name="email" class="email-input">       
+          </label>
+          <button class="email-button button" type="submit">join</button>          
+        </form>
+        <ul class="social-link list-point-none">
+          <li><a href="#"><img class="social-img" src="/images/facebook.svg" alt="facebook" aria-label="facebook"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/twitter.svg" alt="twitter" aria-label="twitter"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/pinterest.svg" alt="pinterest" aria-label="pinterest"></a></li>
+          <li><a href="#"><img class="social-img" src="/images/instagram.svg" alt="instagram" aria-label="instagram"></a></li>
+        </ul>
+      </section>
+      </div>
+      <div class="footer-information container">
+        <div class="company-rating">
+          <p class="rating-text">Company Rating</p>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star rating-star_deactive"></span>
+        </div>
+      <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a class="web-design-link" href="#">Web Design — Direct Line Development</a>
+      </div>
+    </footer>
+  </body>
+</html>

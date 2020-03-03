@@ -1,0 +1,406 @@
+
+.title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  min-width: 229px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+
+.breadcrumbs-link {
+  color: #1E0606;
+}
+
+.breadcrumbs-link:hover {
+  opacity: .75;
+}
+
+.breadcrumbs-link:active {
+  color: #1E0606;
+  opacity: 1;
+}
+
+.breadcrumbs-item-1::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 67px;
+  transform: rotate(45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-item-1::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 67px;
+  transform: rotate(-45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-item-2::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 173px;
+  transform: rotate(45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-item-2::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 173px;
+  transform: rotate(-45deg);
+  width: 2px;
+  height: 8px;
+  background-color:  #1E0606;
+}
+
+.breadcrumbs-active{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
+  opacity: 0.5;
+}
+
+.form {
+  background: rgba(125, 151, 218, 0.2);
+}
+
+.form-order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 42px 85px 42px 20px;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.form-text {
+  display: flex;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.form-cost {
+  border: none;
+
+}
+
+.form-color {
+  display: flex;
+  border: none;
+}
+
+/* .form-color:focus {
+  text-decoration: underline;
+  cursor: pointer;
+} */
+
+.input-color:focus + .checkbox-color-indicator{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.checkbox-color-indicator {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+  width: 19px;
+  height: 19px;
+}
+
+.checkbox-color-indicator:checked::before {
+  content: "";
+  border: 1.5px solid #C29974;
+  border-radius: 0.7px;
+  transform: rotate(30deg);
+  position: absolute;
+  height: 15px;
+  top: -2px;
+  left: 9px;
+}
+
+.checkbox-color-indicator:checked::after {
+  content: "";
+  border: 1.5px solid #C29974;
+  border-radius: 0.7px;
+  transform: rotate(-30deg);
+  position: absolute;
+  height: 10px;
+  top: 3px;
+  left: 3px;
+}
+
+
+
+/* .input-color {
+  display: none;
+} */
+
+.form-delivery {
+  display: flex;
+  border: none;
+
+}
+
+/* .input-delivery {
+  display: none;
+
+} */
+
+.form-amount {
+  border: none;
+
+}
+
+/* .input-amount {
+  display: none;
+
+} */
+
+.form-button {
+  height: 40px;
+}
+
+.toys-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.toys {
+  text-align: center;
+}
+
+.toys-title {
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.toys-price {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-top: 43px;
+  padding: 7px 0;
+}
+
+
+.pagination-links {
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+}
+
+.pagination-link:hover {
+  color: #1E0606;
+  opacity: 0.5;
+}
+
+.pagination-link:active {
+  color: #1E0606;
+  opacity: 1;
+}
+
+.button-left::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.button-left::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.button-left:hover::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+}
+
+.button-left:hover::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+}
+
+.button-left:active::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+  opacity: .5;
+  cursor: none;
+}
+
+.button-left:active::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+  opacity: .5;
+  cursor: none;
+}
+
+.button-right::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: rgba(30, 6, 6, 0.12);
+}
+
+.button-right::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: rgba(30, 6, 6, 0.12);;
+}
+
+.button-right:hover::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+}
+
+.button-right:hover::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+}
+
+.button-right:active::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  transform: rotate(-45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+  opacity: .5;
+  cursor: none;
+}
+
+.button-right:active::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 19px;
+  background-color: #C29974;
+  opacity: .5;
+  cursor: none;
+}
+
+.pagination-link {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.pagination-link-active {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #C29974;
+}
+
