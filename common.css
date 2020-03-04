@@ -46,10 +46,12 @@ img {
 
 .button:hover {
   background-color: #C29974;
+  cursor: pointer;
 }
 
 .button:active {
   background-color: #CFAF91;
+  cursor: none;
 }
 
 .list-point-none {
@@ -385,5 +387,123 @@ img {
   cursor: none;
 }
 
+  /* Form */
+
+  .form-support {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.contact-us-form {
+  display: flex;
+  padding: 42px 40px;
+  width: 680px;
+  flex-wrap: wrap;
+  background: #E5EAF8;
+}
+
+.form-label-text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1E0606;
+  position: absolute;
+  left: 0;
+  top: -23px;
+}
+
+.form-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  position: relative;
+}
+
+.form-label {
+  position: relative;
+  margin: 22px 0;
+}
+
+.form-input {
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+padding: 13px;
+font-family: Roboto;
+font-size: 18px;
+line-height: 21px;
+color: #1E0606;
+}
+
+.form-input-name {
+width: 600px;
+}
+
+.form-input-name::-webkit-input-placeholder {
+color: #1E0606;
+padding-left: 7px;
+}
+
+.form-input-contact {
+width: 290px;
+}
+
+.form-input-message {
+width: 600px;
+min-height: 150px;
+}
+
+.form-consent {
+font-family: Roboto;
+font-size: 14px;
+line-height: 16px;
+color: #1E0606;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+}
+
+.form-consent:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input-consent-indicator {
+  position: relative;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.input-consent:checked + .input-consent-indicator {
+  background: #ffffff;
+}
+
+.input-consent:checked + .input-consent-indicator::before {
+  content: "";
+  border: 1.5px solid #C29974;
+  border-radius: 0.7px;
+  transform: rotate(30deg);
+  position: absolute;
+  height: 15px;
+  top: -2px;
+  left: 9px;
+  
+}
+
+.input-consent:checked + .input-consent-indicator::after {
+  content: "";
+  border: 1.5px solid #C29974;
+  border-radius: 0.7px;
+  transform: rotate(-30deg);
+  position: absolute;
+  height: 10px;
+  top: 3px;
+  left: 3px;
+}
 
 

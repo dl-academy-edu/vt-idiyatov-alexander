@@ -41,29 +41,30 @@
       <form class="form" name="order" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
         <div class="form-order container">
         <fieldset class="form-cost">
-          <label class="form-title">Cost
-            <input class="form-text" type="range" name="cost">
+          <legend class="form-title">Cost</legend>
+          <label class="form-text">
+            <input class="input-cost" type="range" name="cost">
           </label>          
         </fieldset>
   
         <fieldset class="form-color">
           <legend class="form-title">Color</legend>
-          <label class="form-text">
+          <label class="label-color form-text">
             <input class="input-color hidden" type="checkbox" name="color" value="black">
             <div class="checkbox-color-indicator"></div>
             Black
           </label>          
-          <label class="form-text">
+          <label class="label-color form-text">
             <input class="input-color hidden" type="checkbox" name="color" value="blue">
             <span class="checkbox-color-indicator"></span>
             Blue
           </label>
-          <label class="form-text">
+          <label class="label-color form-text">
             <input class="input-color hidden" type="checkbox" name="color" value="green">
             <span class="checkbox-color-indicator"></span>
             Green
           </label>
-          <label class="form-text">
+          <label class="label-color form-text">
             <input class="input-color hidden" type="checkbox" name="color" value="white">
             <span class="checkbox-color-indicator"></span>
             White
@@ -72,70 +73,77 @@
   
         <fieldset class="form-delivery">
           <legend class="form-title">Delivery</legend>
-          <label class="form-text">
-            <input class="input-delivery" type="radio" name="shipping" value="free">
+          <label class="label-delivery form-text">
+            <input class="input-delivery hidden" type="radio" name="shipping" value="free" checked>
+            <span class="radio-delivery-indicator"></span>
             Free shipping
           </label>          
-          <label class="form-text">
-            <input class="input-delivery" type="radio" name="shipping" value="fast" checked>
+          <label class="label-delivery form-text">
+            <input class="input-delivery hidden" type="radio" name="shipping" value="fast">
+            <span class="radio-delivery-indicator"></span>
             Fast shipping
           </label>
           </fieldset>  
   
         <fieldset class="form-amount">
           <legend class="form-title">Amount</legend>
-          <label class="form-text">0-5
-            <input class="input-amount" type="radio" name="amount" value="0-5" checked>
-          </label>          
-          <label class="form-text">10-20
-            <input class="input-amount" type="radio" name="amount" value="10-20">
-          </label>
-          <label class="form-text">20-50
-            <input class="input-amount" type="radio" name="amount" value="20-50">
-          </label>
-          </fieldset>
+            <div class="container-amount">
+              <label class="label-amount form-text">
+                <input class="input-amount hidden" type="radio" name="amount" value="0-5" checked>
+                <span class="radio-amount-indicator">0-5</span>
+              </label>          
+              <label class="label-amount form-text">
+                <input class="input-amount hidden" type="radio" name="amount" value="10-20">
+                <span class="radio-amount-indicator">10-20</span>
+              </label>
+              <label class="label-amount form-text">
+                <input class="input-amount hidden" type="radio" name="amount" value="20-50">
+                <span class="radio-amount-indicator">20-50</span>
+              </label>
+            </div>
+        </fieldset>
         <button type="submit" class="form-button button button-black">Apply</button>
         </div>
       </form>
       <section class="container">
         <h2 class="hidden">Toys</h2>
         <ul class="toys-list list-point-none">
-          <li class="toys">            
+          <li>            
             <a class="toys-link"  href="#">
               <img class="toys-photo" src="/images/Toy-1.jpg" alt="bean bag">
               <h3 class="toys-title">HARKY BEAN BAG CHAIR COVER</h3>
               <p class="toys-price">$60.00 USD</p>
             </a>
           </li>
-          <li class="toys">            
+          <li>            
             <a class="toys-link" href="#">
               <img class="toys-img" src="/images/Toy-2.jpg" alt="deco frames">
               <h3 class="toys-title">BRASS DECO FRAMES</h3> 
               <p class="toys-price">$66.00 USD</p>
             </a>
           </li>
-          <li class="toys">            
+          <li>            
             <a class="toys-link" href="#">
               <img class="toys-img" src="/images/Toy-3.jpg" alt="apron">
               <h3 class="toys-title">CIBO FULL APRON</h3> 
               <p class="toys-price">$60.00 USD</p>
             </a>            
           </li>
-          <li class="toys">            
+          <li>            
             <a class="toys-link" href="#">
               <img class="toys-img" src="/images/Toy-4.jpg" alt="gumball machine">
               <h3 class="toys-title">GATCHA GATCHA GUMBALL MACHINE</h3> 
               <p class="toys-price">$56.00 USD</p>
             </a>            
           </li>
-          <li class="toys">            
+          <li>            
             <a class="toys-link" href="#">
               <img class="toys-img" src="/images/Toy-5.jpg" alt="candle">
               <h3 class="toys-title">CHRISTMAS ADVENT SCENTED CANDLE</h3> 
               <p class="toys-price">$29.00 USD</p>
             </a>            
           </li>
-          <li class="toys">            
+          <li>            
             <a class="toys-link" href="#">
               <img class="toys-img" src="/images/Toy-6.jpg" alt="tea light">
               <h3 class="toys-title">TANGLE SPINNING TEA LIGHT</h3> 
