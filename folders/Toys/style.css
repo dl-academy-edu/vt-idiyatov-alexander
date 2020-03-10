@@ -1,17 +1,17 @@
 
 .title {
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
   color: #1E0606;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 8px;
 }
 
 .breadcrumbs {
-  font-family: Crimson Text;
+  font-family: 'Crimson Text', 'tinos', serif;  
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -40,8 +40,8 @@
 .breadcrumbs-item-1::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 67px;
+  top: 11px;
+  left: 66px;
   transform: rotate(45deg);
   width: 2px;
   height: 8px;
@@ -51,8 +51,8 @@
 .breadcrumbs-item-1::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 67px;
+  top: 6px;
+  left: 66px;
   transform: rotate(-45deg);
   width: 2px;
   height: 8px;
@@ -62,8 +62,8 @@
 .breadcrumbs-item-2::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 173px;
+  top: 10px;
+  left: 170px;
   transform: rotate(45deg);
   width: 2px;
   height: 8px;
@@ -73,8 +73,8 @@
 .breadcrumbs-item-2::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 173px;
+  top: 5px;
+  left: 170px;
   transform: rotate(-45deg);
   width: 2px;
   height: 8px;
@@ -82,7 +82,7 @@
 }
 
 .breadcrumbs-active{
-  font-family: Crimson Text;
+  font-family: 'Crimson Text', 'tinos', serif;  
   font-style: italic;
   font-size: 20px;
   line-height: 25px;
@@ -100,7 +100,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 42px 85px 42px 20px;
+  padding: 42px 85px 15px 10px;
 }
 
 .form-title {
@@ -108,7 +108,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #1E0606;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
 }
 
 .form-text {
@@ -237,10 +237,16 @@
 
 .form-color {
   border: none;
+  margin-right: 15px;
 }
 
 .label-color{
   padding-bottom: 15px;
+}
+
+.input-color {
+  position: absolute;
+  opacity: 0;
 }
 
 .input-color:focus + .checkbox-color-indicator {
@@ -261,6 +267,10 @@
   background: #ffffff;
 }
 
+.input-color:focus + .checkbox-color-indicator {
+  background: #ffffff;
+}
+
 .input-color:checked + .checkbox-color-indicator::before {
   content: "";
   border: 1.5px solid #C29974;
@@ -270,7 +280,6 @@
   height: 15px;
   top: -2px;
   left: 9px;
-  
 }
 
 .input-color:checked + .checkbox-color-indicator::after {
@@ -288,6 +297,7 @@
 
 .form-delivery {
   border: none;
+  margin-right: -35px;
 }
 
 .label-delivery {
@@ -303,7 +313,12 @@
   margin-right: 10px;
 }
 
-.input-delivery:checked + .radio-delivery-indicator {
+.input-delivery {
+  position: absolute;
+  opacity: 0;
+}
+
+.input-delivery:focus + .radio-delivery-indicator {
   background: #ffffff;
 }
 
@@ -317,13 +332,13 @@
   height: 12px;
   top: 50%;
   left: 50%;
-  
 }
 
 /* form-amount */
 
 .form-amount {
   border: none;
+  margin-right: -33px;
 }
 
 .container-amount {
@@ -337,6 +352,17 @@
   padding-top: 7px;
   justify-content: center;
   background: #FFFFFF;
+}
+
+.label-amount {
+  position: relative;
+}
+
+.input-amount {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
 }
 
 .input-amount:hover + .radio-amount-indicator {
@@ -357,7 +383,10 @@
 
 .form-button {
   height: 40px;
+  margin-top: 37px;
+  margin-right: 20px;
 }
+
 
 /* toys */
 
@@ -365,31 +394,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 .toys-link {
+  display: block;
   text-align: center;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .toys-link:hover::before {
   position: absolute;
-  bottom: 89px;
+  bottom: 220px;
   left: 87px;
   content: "LEARN MORE";
   width: 207px;
   height: 207px;  
   background: #E5EAF8;
   opacity: 0.9;
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 29px;
   color: #1E0606;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-  padding-top: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-
 }
 
 .toys-link:active::before {
@@ -399,22 +432,26 @@
   height: 207px;  
   background: #E5EAF8;
   opacity: 0.67;
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 29px;
   color: #1E0606;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-  padding-top: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
 }
 
 
 
 .toys-title {
+  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
+  padding-top: 12px;
 }
 
 .toys-price {
@@ -424,17 +461,16 @@
   color: #1E0606;
 }
 
-.pagination-list {
+.pagination-links {
   display: flex;
   justify-content: space-between;
-  position: relative;
   align-items: center;
-  margin-top: 43px;
-  padding: 7px 0;
+  margin-top: 18px;
+  margin-bottom: -13px;
 }
 
 
-.pagination-links {
+.pagination-list {
   display: flex;
   justify-content: space-between;
   width: 234px;
@@ -445,153 +481,126 @@
   opacity: 0.5;
 }
 
+.pagination-link:focus {
+  color: #1E0606;
+  opacity: 0.5;
+  outline: none;
+}
+
+.pagination-link-active:focus {
+  color: #1E0606;
+  opacity: 0.5;
+  outline: none;
+}
+
 .pagination-link:active {
   color: #1E0606;
   opacity: 1;
-}
-
-.button-left::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: rgba(30, 6, 6, 0.12);
-}
-
-.button-left::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: rgba(30, 6, 6, 0.12);
-}
-
-.button-left:hover::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-}
-
-.button-left:hover::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-}
-
-.button-left:active::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-  opacity: .5;
   cursor: none;
 }
 
-.button-left:active::after {
+.pagination-arrow {
+  border: none;
+  background: white;
+  outline: none;
+}
+
+.arrow-left::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-  opacity: .5;
+  display: flex;
+  position: relative;
+  transform: rotate(45deg);
+  width: 21px;
+  height: 21px;
+  border-left: 4px solid rgba(30, 6, 6, 0.12);
+  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
+}
+
+.arrow-left:hover::before {
+  content: "";
+  display: flex;
+  position: relative;
+  transform: rotate(45deg);
+  width: 21px;
+  height: 21px;
+  border-left: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
+  cursor: pointer;
+}
+
+.arrow-left:active::before {
+  content: "";
+  display: flex;
+  position: relative;
+  transform: rotate(45deg);
+  width: 21px;
+  height: 21px;
+  border-left: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
   cursor: none;
 }
 
-.button-right::before {
+.arrow-left:focus::before {
   content: "";
-  position: absolute;
-  top: 1px;
-  right: 0;
-  transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: rgba(30, 6, 6, 0.12);
-}
-
-.button-right::after {
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: 0;
+  display: flex;
+  position: relative;
   transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: rgba(30, 6, 6, 0.12);;
+  width: 21px;
+  height: 21px;
+  border-left: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
+  cursor: pointer;
 }
 
-.button-right:hover::before {
+.arrow-right::before {
   content: "";
-  position: absolute;
-  top: 1px;
-  right: 0px;
+  display: flex;
+  position: relative;
   transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
+  width: 21px;
+  height: 21px;
+  border-right: 4px solid rgba(30, 6, 6, 0.12);
+  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
 }
 
-.button-right:hover::after {
+.arrow-right:hover::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  right: 0px;
-  transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-}
-
-.button-right:active::before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  right: 0px;
+  display: flex;
+  position: relative;
   transform: rotate(-45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-  opacity: .5;
+  width: 21px;
+  height: 21px;
+  border-right: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
+  cursor: pointer;
+}
+
+.arrow-right:active::before {
+  content: "";
+  display: flex;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 21px;
+  height: 21px;
+  border-right: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
   cursor: none;
 }
 
-.button-right:active::after {
+.arrow-right:focus::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  right: 0px;
-  transform: rotate(45deg);
-  width: 4px;
-  height: 19px;
-  background-color: #C29974;
-  opacity: .5;
-  cursor: none;
+  display: flex;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 21px;
+  height: 21px;
+  border-right: 4px solid #C29974;
+  border-bottom: 4px solid #C29974;
+  cursor: pointer;
 }
 
 .pagination-link {
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -600,7 +609,7 @@
 }
 
 .pagination-link-active {
-  font-family: Montserrat;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
