@@ -12,61 +12,9 @@
 }
 
 .breadcrumbs {
-  display: flex;
   min-width: 146px;
-  justify-content: space-between;
-  position: relative;
   margin-top: 7px;
   margin-bottom: 24px;
-}
-
-.breadcrumbs-item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 65px;
-  transform: rotate(45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 65px;
-  transform: rotate(-45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-link {
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-}
-
-.breadcrumbs-active {
-  
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-  opacity: .5;
-}
-
-.breadcrumbs-link:hover {
-  opacity: .75;
-}
-
-.breadcrumbs-link:active {
-  color: #1E0606;
-  opacity: 1;
 }
 
 .products-links {
@@ -110,55 +58,36 @@
 }
 
 .link-kids {
-  background: #DBE4DB;
-  background-image: url(/images/product-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-1.png) center no-repeat #DBE4DB;
   background-blend-mode: multiply;
 }
 
 .link-shop {
-  background: rgba(186, 142, 107, 0.3);
-  background-image: url(/images/product-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-2.png) center no-repeat rgba(186, 142, 107, 0.3);
 }
 
 .link-toys {
-  background: #F8F2DA;
-  background-image: url(/images/product-3.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-3.png) center no-repeat #F8F2DA;
   background-blend-mode: multiply;
 }
 
 .link-accessories {
-  background: rgba(9, 3, 79, 0.17);
-  background-image: url(/images/product-4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  /* margin-left: 200px; */
+  background: url(/images/product-4.png) center no-repeat rgba(9, 3, 79, 0.17);
 }
 
 .link-sale {
-  background: rgba(207, 68, 111, 0.25);
-  background-image: url(/images/product-5.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-5.png) center no-repeat rgba(207, 68, 111, 0.25);
   background-blend-mode: multiply;
 }
 
 .link-apparel-adults {
-  background: rgba(125, 151, 218, 0.2);
-  background-image: url(/images/product-6.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-6.png) center no-repeat rgba(125, 151, 218, 0.2);
   background-blend-mode: multiply;
 }
 
 .description {
-  width: 710px;
-  margin-left: 222px;
+  width: 680px;
+  margin-left: 200px;
 }
 
 .description-title {

@@ -8,7 +8,7 @@
   position: relative;
   min-height: 372px;
   background: #EEE4DB;
-  margin-top: 85px;
+  margin-top: 90px;
   width: 1180px;
 }
 
@@ -37,13 +37,13 @@
 .slider_nav-item {
   height: 3px;
   width: 31px;
-  border: 0px;
+  border: 0;
   background-color: #D6CAC2;
   }
 
 .slider_nav-item:hover {
   background: #725F5B;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .slider_nav-text{
@@ -58,7 +58,7 @@
 .poster-title {
   display: flex;
   flex-direction: column;
-  margin-top: 89px;
+  margin-top: 91px;
   margin-left: 113px;
   width: 307px;
 
@@ -68,7 +68,7 @@
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 40px;
-  line-height: 110% 
+  line-height: 110%; 
   color: #1E0606;
   margin: 0px;
 }
@@ -90,7 +90,7 @@
 .background-img {
   display: flex;
   position: absolute;
-  max-width: 635.49px;
+  max-width: 635px;
   width: 50vw;
   height: 461px;
   bottom: 0;
@@ -98,6 +98,7 @@
 }
 
 .text-small{
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -149,7 +150,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
 }
 
 .products-link:hover {
@@ -166,35 +166,23 @@
 }
 
 .link-kids {
-  background: #DBE4DB;
-  background-image: url(/images/product-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-1.png) center no-repeat #DBE4DB;
   background-blend-mode: multiply;
 }
 
 .link-shop {
-  background: rgba(186, 142, 107, 0.3);
-  background-image: url(/images/product-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-2.png) center no-repeat rgba(186, 142, 107, 0.3);
 }
 
 .link-toys {
-  background: #F8F2DA;
-  background-image: url(/images/product-3.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/images/product-3.png) center no-repeat #F8F2DA;
   background-blend-mode: multiply;
 }
 
 .link-accessories {
-  background: rgba(9, 3, 79, 0.17);
-  background-image: url(/images/product-4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 0;
+  background: url(/images/product-4.png) center no-repeat rgba(9, 3, 79, 0.17);
 }
+
 
 .slider-nav {
   display: flex;
@@ -205,22 +193,14 @@
   width: 37px;
   height: 37px;
   background: rgba(112, 187, 220, 0.2);
-  margin-right: 18px;
   opacity: 1;
   border: 0px;
   margin-right: 6px;
 }
 
-.slider_nav-button:hover {
+.slider_nav-button:hover, .slider_nav-button:focus {
   opacity: 0.7;
   cursor: pointer;
-  outline: none;
-}
-
-.slider_nav-button:focus {
-  opacity: 0.7;
-  cursor: pointer;
-  outline: none;
 }
 
 .slider_nav-button:active {
@@ -268,7 +248,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 74px;
-  display: flex;
 }
 
 .delivery-img {
@@ -326,9 +305,8 @@
   position: absolute;
   width: 326px;
   height: 55px;
-  background: rgba(112, 187, 220, 0.2);
   margin-left: -60px;
-  background-image: url(/images/delivery-link_active.svg)
+  background: url(/images/delivery-link_active.svg) rgba(112, 187, 220, 0.2);
 }
 
 .delivery-text {
@@ -402,7 +380,7 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
-  margin: 0px;
+  margin: 0;
 }
 
 .about-us-text {
@@ -422,7 +400,6 @@
 /* contacts */
 
 .contacts {
-  right: 0;
   width: 543px;
   height: 209px;
   padding-left: 30px;
@@ -469,7 +446,6 @@
 .modal-close {
   width: 32px;
   height: 32px;
-  position: relative;
   position: absolute;
   border: 0;
   top: -9px;
@@ -477,24 +453,15 @@
   background: transparent;
 }
 
-.modal-close:hover {
-  width: 32px;
-  height: 32px;
-  position: relative;
-  position: absolute;
-  border: 0;
+.modal-close:hover, .modal-close:focus {
+  opacity: .5;
   cursor: pointer;
-  background: transparent;
+  outline: none;
 }
 
 .modal-close:active {
-  width: 32px;
-  height: 32px;
-  position: relative;
-  position: absolute;
-  border: 0;
+  opacity: .3;
   cursor: none;
-  background: transparent;
 }
 
 
@@ -502,80 +469,22 @@
   position: absolute;
   left: 50%;
   top: 25%;
-  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
   content: "";
   width: 3px;
   height: 20px;
   background: #FFFFFF;
-  transform: rotate(45deg);
 }
 
 .modal-close::after {
   position: absolute;
   left: 50%;
   top: 25%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 3px;
-  height: 20px;
-  background: #FFFFFF;
   transform: rotate(-45deg);
-}
-
-.modal-close:hover::before {
-  position: absolute;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
   content: "";
   width: 3px;
   height: 20px;
   background: #FFFFFF;
-  transform: rotate(45deg);
-  opacity: .5;
-  cursor: pointer;
-}
-
-.modal-close:hover::after {
-  position: absolute;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 3px;
-  height: 20px;
-  background: #FFFFFF;
-  transform: rotate(-45deg);
-  opacity: .5;
-  cursor: pointer;
-}
-
-.modal-close:active::before {
-  position: absolute;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 3px;
-  height: 20px;
-  background: #FFFFFF;
-  transform: rotate(45deg);
-  opacity: .3;
-  cursor: none;
-}
-
-.modal-close:active::after {
-  position: absolute;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 3px;
-  height: 20px;
-  background: #FFFFFF;
-  transform: rotate(-45deg);
-  opacity: .3;
-  cursor: none;
 }
 
 .contact-us-form {

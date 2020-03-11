@@ -37,7 +37,7 @@
           <li class="breadcrumbs-item-1"></li>
           <li><a class="breadcrumbs-link" href="/folders/CategoryProducts/index.html">Catalog</a></li>
           <li class="breadcrumbs-item-2"></li>
-          <li class="breadcrumbs-active">Toys</li>
+          <li class="breadcrumbs-link breadcrumbs-active">Toys</li>
         </ul>
       </div>
       <form class="form" name="order" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
@@ -53,23 +53,19 @@
           <legend class="form-title">Color</legend>
             <label class="label-color form-text">
               <input class="input-color" type="checkbox" name="color" value="black">
-              <span class="checkbox-color-indicator"></span>
-                Black
+              <span class="checkbox-color-indicator">Black</span>                
             </label>          
             <label class="label-color form-text">
               <input class="input-color" type="checkbox" name="color" value="blue">
-              <span class="checkbox-color-indicator"></span>
-                Blue
+              <span class="checkbox-color-indicator">Blue</span>                
             </label>
             <label class="label-color form-text">
               <input class="input-color" type="checkbox" name="color" value="green">
-              <span class="checkbox-color-indicator"></span>
-                Green
+              <span class="checkbox-color-indicator">Green</span>                
             </label>
             <label class="label-color form-text">
               <input class="input-color" type="checkbox" name="color" value="white">
-              <span class="checkbox-color-indicator"></span>
-                White
+              <span class="checkbox-color-indicator">White</span>                
             </label>
         </fieldset>  
   
@@ -77,13 +73,11 @@
           <legend class="form-title">Delivery</legend>
             <label class="label-delivery form-text">
               <input class="input-delivery" type="radio" name="shipping" value="free" checked>
-              <span class="radio-delivery-indicator"></span>
-                Free shipping
+              <span class="radio-delivery-indicator">Free shipping</span>                
             </label>          
             <label class="label-delivery form-text">
               <input class="input-delivery" type="radio" name="shipping" value="fast">
-              <span class="radio-delivery-indicator"></span>
-                Fast shipping
+              <span class="radio-delivery-indicator">Fast shipping</span>                
             </label>
           </fieldset>  
   
@@ -91,7 +85,7 @@
           <legend class="form-title">Amount</legend>
             <div class="container-amount">
               <label class="label-amount form-text" style="text-decoration: none;">
-                <input class="input-amount" type="radio" name="amount" value="0-5" checked>
+                <input disabled class="input-amount" type="radio" name="amount" value="0-5" checked>
                 <span class="radio-amount-indicator">0-5</span>
               </label>          
               <label class="label-amount form-text" style="text-decoration: none;">
@@ -155,14 +149,14 @@
         </ul>
       </section>
       <div class="pagination-links container">
-        <button class="pagination-arrow arrow-left" type="button"></button>
+        <button class="pagination-arrow arrow-left" type="button" aria-label="arrow-left"></button>
           <ul class="pagination-list list-point-none">
-            <li><a class="pagination-link-active" href="#">1</a></li>
+            <li class="pagination-link pagination-link-active">1</li>
             <li><a class="pagination-link" href="#">2</a></li>
             <li><a class="pagination-link" href="#">3</a></li>
             <li><a class="pagination-link" href="#">4</a></li>
           </ul>
-        <button class="pagination-arrow arrow-right" type="button"></button>
+        <button class="pagination-arrow arrow-right" type="button" aria-label="arrow-right"></button>
       </div>
     </main>
     <footer class="footer">

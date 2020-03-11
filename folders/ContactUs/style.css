@@ -12,61 +12,9 @@
 }
 
 .breadcrumbs {
-  display: flex;
   min-width: 167px;
-  justify-content: space-between;
-  position: relative;
   margin-top: 8px;
   margin-bottom: 24px;
-}
-
-.breadcrumbs-item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 64px;
-  transform: rotate(45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 64px;
-  transform: rotate(-45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-link {
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-}
-
-.breadcrumbs-active {
-  
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-  opacity: .5;
-}
-
-.breadcrumbs-link:hover {
-  opacity: .75;
-}
-
-.breadcrumbs-link:active {
-  color: #1E0606;
-  opacity: 1;
 }
 
 .form-support {

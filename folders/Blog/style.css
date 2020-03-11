@@ -12,61 +12,9 @@
 }
 
 .breadcrumbs {
-  display: flex;
   min-width: 127px;
-  justify-content: space-between;
-  position: relative;
   margin-top: 7px;
   margin-bottom: 15px;
-}
-
-.breadcrumbs-item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 65px;
-  transform: rotate(45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 65px;
-  transform: rotate(-45deg);
-  width: 2px;
-  height: 8px;
-  background-color:  #1E0606;
-}
-
-.breadcrumbs-link {
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-}
-
-.breadcrumbs-link:hover {
-  opacity: .75;
-}
-
-.breadcrumbs-link:active {
-  color: #1E0606;
-  opacity: 1;
-}
-
-.breadcrumbs-active {
-
-  font-family: 'Crimson Text', 'tinos', serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 25px;
-  color: #1E0606;
-  opacity: .5;
 }
 
 .blogs-list {
@@ -89,14 +37,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 17px;
-
 }
 
 .blog-title {
   display: flex;
   flex-wrap: wrap;
   margin-top: -8px;
-  margin-bottom: px;
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -104,8 +50,9 @@
   color: #1E0606;
 }
 
-.blog-title:hover {
+.blog-link:hover {
   text-decoration: underline;
+  text-decoration-color: #1E0606;
 }
 
 .blog-text {
@@ -118,158 +65,12 @@
 }
 
 .pagination-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
 
 .pagination-list {
-  display: flex;
-  justify-content: space-between;
-  width: 234px;
   margin: 0;
 }
 
-.pagination-link:hover {
-  color: #1E0606;
-  opacity: 0.5;
-}
-
-.pagination-link:focus {
-  color: #1E0606;
-  opacity: 0.5;
-  outline: none;
-}
-
-.pagination-link-active:focus {
-  color: #1E0606;
-  opacity: 0.5;
-  outline: none;
-}
-
-.pagination-link:active {
-  color: #1E0606;
-  opacity: 1;
-  cursor: none;
-}
-
-.pagination-arrow {
-  border: none;
-  background: white;
-  outline: none;
-}
-
-.arrow-left::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(45deg);
-  width: 21px;
-  height: 21px;
-  border-left: 4px solid rgba(30, 6, 6, 0.12);
-  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
-}
-
-.arrow-left:hover::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(45deg);
-  width: 21px;
-  height: 21px;
-  border-left: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: pointer;
-}
-
-.arrow-left:active::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(45deg);
-  width: 21px;
-  height: 21px;
-  border-left: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: none;
-}
-
-.arrow-left:focus::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(45deg);
-  width: 21px;
-  height: 21px;
-  border-left: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: pointer;
-}
-
-.arrow-right::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(-45deg);
-  width: 21px;
-  height: 21px;
-  border-right: 4px solid rgba(30, 6, 6, 0.12);
-  border-bottom: 4px solid rgba(30, 6, 6, 0.12);
-}
-
-.arrow-right:hover::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(-45deg);
-  width: 21px;
-  height: 21px;
-  border-right: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: pointer;
-}
-
-.arrow-right:active::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(-45deg);
-  width: 21px;
-  height: 21px;
-  border-right: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: none;
-}
-
-.arrow-right:focus::before {
-  content: "";
-  display: flex;
-  position: relative;
-  transform: rotate(-45deg);
-  width: 21px;
-  height: 21px;
-  border-right: 4px solid #C29974;
-  border-bottom: 4px solid #C29974;
-  cursor: pointer;
-}
-
-.pagination-link {
-  font-family: 'Montserrat', 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #1E0606;
-}
-
-.pagination-link-active {
-  font-family: 'Montserrat', 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #C29974;
-}
