@@ -353,11 +353,11 @@
 
 .about-us {
   max-width: 543px;
-  height: 236px;
+  min-height: 236px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: 57px;
-  margin-bottom: 30px;
+  margin-bottom: 85px;
   background: #E1F0F7;
 }
 
@@ -380,7 +380,7 @@
   font-size: 26px;
   line-height: 32px;
   color: #1E0606;
-  margin: 0;
+  margin: 3px;
 }
 
 .about-us-text {
@@ -426,6 +426,20 @@
   color: #1E0606;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:42%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /* modal */

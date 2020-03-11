@@ -296,8 +296,9 @@ img {
   display: flex;
   align-items: center;
   color: #FFFFFF;
-  width: 380px;
+  width: 250px;
   padding-top: 7px;
+  margin-right: 130px;
 }
 
 .company-rating:hover {
@@ -343,7 +344,8 @@ img {
   align-items: center;
   color: #A2A2A2;
   padding-top: 7px;
-  width: 380px;
+  width: 300px;
+  margin-right: 80px;
 }
 
 .web-design-link:hover, .web-design-link:focus {
