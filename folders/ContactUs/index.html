@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i,700i%7CMontserrat:300,700%7COpen+Sans:400,700%7CRoboto&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/common.css">
-    <link rel="stylesheet" href="/folders/CategoryProducts/style.css">
+    <link rel="stylesheet" href="/folders/ContactUs/style.css">
   </head>
   <body>
     <header class="header container">
@@ -16,7 +16,7 @@
       <nav class="header-nav">
         <ul class="header-list-links list-point-none">
           <li><a class="link" href="/folders/Blog/index.html">blog</a></li>
-          <li><a class="link" href="#">catalog</a></li>
+          <li><a class="link" href="/folders/CategoryProducts/index.html">catalog</a></li>
           <li><a class="link" href="/folders/Toys/index.html">toys</a></li>
         </ul>
         <ul class="header-list-contacts list-point-none">
@@ -25,50 +25,58 @@
             <img class="header-button header-search-button" src="/images/search.svg" alt="search" width="17" height="17">
             </a>
           </li>
-          <li>
-            <a class="contact-link" href="/folders/ContactUs/index.html">contact us</a>
-          </li>
+          <li><a class="contact-link" href="#">contact us</a></li>
         </ul>      
       </nav>
-    </header>
+    </header>  
     <main>
-      <h1 class="title container">Category Products</h1>
+      <h1 class="title container">Contact Us</h1>
       <div class="breadcrumbs container">
         <ul class="breadcrumbs list-point-none">
-          <li>
-            <a class="breadcrumbs-link" href="/index.html">Home</a>
-          </li>
+          <li><a class="breadcrumbs-link" href="/index.html">Home</a></li>
           <li class="breadcrumbs-item"></li>
-          <li class="breadcrumbs-link breadcrumbs-active">Catalog</li>
+          <li class="breadcrumbs-link breadcrumbs-active">Contact Us</li>
         </ul>
       </div>
-      <div class="container">
-      <section class="products">
-        <h2 class="hidden">products</h2>
-          <div class="products-links">          
-            <a class="products-link link-kids" href="#">
-              <span class="products-link-text">APPAREL KIDS</span></a>
-            <a class="products-link link-shop" href="#">
-              <span class="products-link-text">HOLIDAY SHOP</span></a>
-            <a class="products-link link-toys" href="/folders/Toys/index.html">
-              TOYS</a>
-            <a class="products-link link-accessories" href="#">
-              ACCESSORIES</a>   
-            <a class="products-link link-sale" href="#">
-              SALE</a>
-            <a class="products-link link-apparel-adults" href="#">
-              <span class="products-link-text">APPAREL ADULTS</span></a>    
-          </div>
-      </section>
-      <section class="description">
-        <h2 class="description-title">Product Description</h2>
-        <p class="description-text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and
-          almost really cry. You can even bathe her, just like a little sister.</p>
-        <p class="description-text">A toy with a height of 43 cm bends its knees, the head rotates, it can
-          stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-        <p class="description-text">The set includes a miniature set of fashionable clothes, a hairbrush,
-          a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets:
-          one for the doll, the other for her young mistress.</p>
+      <div class="form-support container">
+      <form class="contact-us-form" action="https://form-data-dl.herokuapp.com/api/messages" method="POST">
+        <label class="form-label">
+          <input class="form-input form-input-name" placeholder="Ivan Ivanov" type="text" name="name">
+          <span class="form-label-text">Name</span>
+        </label>        
+    
+      <div class="form-contact">
+        <label class="form-label">
+          <input class="form-input form-input-contact" type="text" name="phone">
+          <span class="form-label-text">Phone</span>
+        </label>        
+    
+        <label class="form-label">
+          <input class="form-input form-input-contact" type="email" name="email">
+          <span class="form-label-text">Email</span>
+        </label>        
+      </div>
+        
+        <label class="form-label">
+          <textarea class="form-input form-input-message" name="message"></textarea>
+          <span class="form-label-text">Message</span>
+        </label>
+        
+        <label class="form-consent">
+          <input class="input-consent" type="checkbox" name="accept" value="data">
+          <span class="input-consent-indicator">By clicking on the button, you consent
+            to the processing of your personal data</span>
+        </label> 
+        
+        <button type="submit" class="button button-black">Submit</button>
+      </form>
+      <section class="support">
+        <h2 class="hidden">Support</h2>
+        <p class="support-text">Our support team are on-hand to assist with any
+          issues you are experiencing.</p>
+        <p class="support-text">Please use the form to contact us with your needs.
+          Send us a message and we'll respond as soon as possible.</p>
+        <p class="support-text text_large">An expert is waiting to help you!</p>
       </section>
       </div>
     </main>
@@ -77,8 +85,8 @@
       <section class="navigation">
         <h2 class="navigation-title">Navigation</h2>
         <ul class="navigation-list  list-point-none">
-          <li><a class="navigation-link" href="/folders/Toys/index.html">Toys</a></li>
-          <li><a class="navigation-link" href="/folders/Blog/index.html">Blog</a></li>
+          <li><a class="navigation-link" href="/folders/toys/index.html">Toys</a></li>
+          <li><a class="navigation-link" href="/folders/blog/index.html">Blog</a></li>
           <li><a class="navigation-link" href="#">Design Services</a></li>
           <li><a class="navigation-link" href="#">Featured On</a></li>
           <li><a class="navigation-link" href="#">2018 Holiday Catalog</a></li>
@@ -88,7 +96,7 @@
       <section class="customer-information">
         <h2 class="customer-information-title">Customer Information</h2>
         <ul class="customer-information-list list-point-none">
-          <li><a class="customer-information-link" href="/folders/ContactUs/index.html">Contact Us</a></li>
+          <li><a class="customer-information-link" href="#">Contact Us</a></li>
           <li><a class="customer-information-link" href="#">Sale Exclusions</a></li>
           <li><a class="customer-information-link" href="#">Shipping & Returns</a></li>
           <li><a class="customer-information-link" href="#">Terms & Conditions</a></li>
@@ -124,6 +132,6 @@
         <p class="copyright">Copyright © 2018 Dlk • Design Life Kids</p>
         <a class="web-design-link" href="#">Web Design — Direct Line Development</a>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>
