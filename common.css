@@ -533,6 +533,11 @@ img {
 }
 
 .breadcrumbs-active {
+  font-family: 'Crimson Text', 'tinos', serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1E0606;
   opacity: .5;
 }
 
